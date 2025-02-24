@@ -4,20 +4,33 @@ Welcome to the AiBookWriter Crew project, powered by [crewAI](https://crewai.com
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Ensure you have Python >=3.10 <3.13 installed on your system. This project uses CrewAI for task automation and AI-driven workflows.
 
-First, if you haven't already, install uv:
+First, create a virtual environment:
 
 ```bash
-pip install uv
+python -m venv env
 ```
 
-Next, navigate to your project directory and install the dependencies:
+Activate the Virtual Environment
 
-(Optional) Lock the dependencies and install them by using the CLI command:
 ```bash
-crewai install
+cd env/Scripts
+activate
 ```
+
+Install CrewAI and Required Tools
+
+```bash
+pip install crewai crewai-tools
+```
+Run the Project
+
+```bash
+python main.py
+```
+
+
 ### Customizing
 
 **Add your `GROQ_API_KEY` into the `.env` file**
@@ -34,7 +47,7 @@ crewai install
 To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
 
 ```bash
-$ crewai run
+python main.py
 ```
 
 This command initializes the ai_book_writer Crew, assembling the agents and assigning them tasks as defined in your configuration.
