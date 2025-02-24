@@ -1,0 +1,34 @@
+research_book:
+  description: >
+    Conduct in-depth research on {topic} using Serper AI to gather relevant insights.
+  expected_output: >
+    A detailed research document summarizing key findings, references, and important concepts.
+  agent: research_agent
+
+extract_information:
+  description: >
+    Extract and organize data from various sources using the ScrapeWebsite tool.
+  expected_output: >
+    A structured dataset containing relevant extracted information for book writing.
+  agent: extraction_agent
+
+write_book:
+  description: >
+    Write a comprehensive book based on researched and extracted information.Each chapter should be at least 500 words.
+  expected_output: >
+    Drafts of all chapters in the book.
+  agent: writing_agent
+
+edit_book:
+  description: >
+    Edit the written chapters for clarity, coherence, and grammatical accuracy.
+  expected_output: >
+    Edited versions of all chapters.
+  agent: editing_agent
+
+publish_book:
+  description: >
+    Format the manuscript and prepare it for publication.
+  expected_output: >
+    A finalized manuscript ready for publication and saved in Book/book.md file.
+  agent: publishing_agent
